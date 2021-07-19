@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ToolTip } from "./components/ToolTip";
-import Login from "./components/Login";
+import SampleContainer from "./components/SampleContainer";
 import RGBPicker, { RGBValues } from "./components/RGBPicker";
 import "./styles.scss";
 
@@ -60,7 +60,7 @@ export default function App() {
 
   return (
     <div ref={rootRef}>
-      <Login>
+      <SampleContainer>
         <ToolTip title={data.title}>
           <ul className="tooltip__list">
             <li className="item bold-item head">
@@ -77,7 +77,7 @@ export default function App() {
           </ul>
         </ToolTip>
         <RGBPicker color={state} onChange={setColor} />
-      </Login>
+      </SampleContainer>
     </div>
   );
 }

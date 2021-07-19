@@ -24,7 +24,7 @@ const Content = styled.div`
   border-color: var(--border-color, #ccc);
 `;
 
-const Login = ({ children }: any) => {
+const SampleContainer = ({ children }: any) => {
   return (
     <Container>
       <Content>{children}</Content>
@@ -32,4 +32,4 @@ const Login = ({ children }: any) => {
   );
 };
 
-export default Login;
+export default SampleContainer;
